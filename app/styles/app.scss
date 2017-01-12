@@ -1,2 +1,7 @@
 @import "bourbon";
 @import 'breakpoint';
+
+@import "core/_base";
+@import "core/_breakpoints";
+@import "core/_typography";
+@import "core/_variables";

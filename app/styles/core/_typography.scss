@@ -1,0 +1,54 @@
+$xsmall-font-size: rem(12);
+$small-font-size: rem(14);
+$normal-font-size: rem(16);
+$large-font-size: rem(18);
+$xlarge-font-size: rem(24);
+$xxlarge-font-size: rem(34);
+
+$default-font-family: 'Assistant', sans-serif;
+$default-font-size: $normal-font-size;
+
+html,
+body,
+button,
+select,
+option,
+input,
+textarea {
+  font-family: $default-font-family;
+  font-size: $default-font-size;
+}
+
+h1, h2, h3, h4, h5 {
+  @include breakpoint($tablet-vertical) {
+    line-height: rem(24);
+  }
+}
+
+h1 {
+  @include breakpoint($tablet-horizontal) {
+    font-size: $xxlarge-font-size;
+  }
+  @include breakpoint($tablet-vertical) {
+    font-size: $large-font-size;
+  }
+}
+
+h2 {
+  @include breakpoint($tablet-horizontal) {
+    font-size: $xlarge-font-size;
+  }
+  @include breakpoint($tablet-vertical) {
+    font-size: $large-font-size;
+  }
+}
+
+p {
+  @include breakpoint($tablet-horizontal) {
+    line-height: rem(24);
+  }
+  @include breakpoint($tablet-vertical) {
+    line-height: rem(22);
+    font-size: $small-font-size;
+  }
+}
