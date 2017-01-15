@@ -1,0 +1,49 @@
+label.animated-label {
+  display: block;
+  letter-spacing: rem(4);
+  text-align: center;
+
+  .label-text {
+    color: $peach;
+    cursor: text;
+    font-size: rem(20);
+    line-height: rem(20);
+    text-transform: uppercase;
+    transform: translateY(rem(-34));
+    transition: all 0.3s;
+  }
+
+  input {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: rem(2) solid $grey;
+    box-sizing: border-box;
+    color: $white;
+    font-size: rem(36);
+    letter-spacing: rem(-1);
+    outline: 0;
+    padding: rem(5) rem(20);
+    text-align: center;
+    transition: all 0.3s;
+    width: rem(150);
+
+    &:focus {
+      width: 100%;
+
+      & + .label-text {
+        font-size: rem(13);
+        transform: translateY(rem(-74));
+      }
+    }
+    &:valid + .label-text {
+      font-size: rem(13);
+      transform: translateY(rem(-74));
+    }
+  }
+  &.error {
+    input {
+      border-color: $scarlet;
+    }
+  }
+}

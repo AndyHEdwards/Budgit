@@ -1,0 +1,17 @@
+.btn-primary {
+  background-color: $light-blue;
+  border: rem(2) solid $peach;
+  border-radius: rem(27);
+  color: $peach;
+  cursor: pointer;
+  font-size: rem(20);
+  padding: rem(10) rem(30);
+  text-transform: uppercase;
+  transition: all 200ms;
+
+  &:hover, &:focus {
+    background-color: $peach;
+    color: $light-blue;
+    outline: 0;
+  }
+}

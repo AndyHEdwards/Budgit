@@ -1,6 +1,16 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: rem(0);
+  min-height: 100%;
   a {
     text-decoration: none;
   }
+}
+
+input[type='number'], input[type='text'] {
+  border: none;
+  outline: none;
 }

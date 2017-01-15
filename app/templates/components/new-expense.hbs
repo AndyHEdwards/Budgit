@@ -1,0 +1,23 @@
+<div class="new-expense">
+  <div class="field cost">
+    <label class="animated-label {{if showCostError 'error'}}">
+      {{input type='number' value=expense.cost id='cost' step="0.01" class='cost-input' required=true}}
+      <div class="label-text">Cost</div>
+    </label>
+  </div>
+  <div class="field description">
+    <label class="animated-label {{if showDescriptionError 'error'}}">
+      {{input type='text' value=expense.description id='desctiption' class='description-input' required=true}}
+      <div class="label-text">Description</div>
+    </label>
+  </div>
+  <div class="field category">
+    <label class="animated-label {{if showCategoryError 'error'}}">
+      {{input type='text' value=expense.category id='category' calss='category-input' required=true}}
+      <div class="label-text">Category</div>
+    </label>
+  </div>
+  <div class="action">
+    <button class="btn-primary" {{action 'addExpense' expense}}>Add expense</button>
+  </div>
+</div>

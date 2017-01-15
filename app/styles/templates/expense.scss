@@ -1,0 +1,16 @@
+#expense {
+  background-color: $light-blue;
+
+  > .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: $gutter-padding;
+
+    .action {
+      margin-top: rem(50);
+      text-align: center;
+    }
+  }
+}

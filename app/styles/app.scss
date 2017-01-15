@@ -3,5 +3,12 @@
 
 @import "core/_base";
 @import "core/_breakpoints";
+@import "core/colours";
+@import "core/buttons";
+@import "core/labels";
 @import "core/_typography";
 @import "core/_variables";
+
+@import "components/new-expense";
+
+@import "templates/expense";
